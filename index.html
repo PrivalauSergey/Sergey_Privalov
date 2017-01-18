@@ -1,28 +1,36 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="site.css">
   <title>Task 1</title>
 </head>
 <body>
   <div class="navbar-info">
-    <div class="navbar-info-left">
-      <div>
-        <div class="icon">
-          <i class="icon-car"></i> GET FREE! SHIPPING ON ORDER OVER $100
-        </div>
+    <div class="navbar-info-top">
+      <div class="navbar-info-left">
+          <div class="icon-car">
+            <img class="car" src="image/car.png"></img>
+          </div>
+          <div class="navbar-info-left-text">
+            GET FREE! SHIPPING ON ORDER OVER <span class="navbar-info-left-cost">$100</span>
+          </div>
       </div>
       <div class=navbar-info-right>
-        <a href="#">LOGIN</a>/
-        <a href="#">REGISTER</a>
-        <ul>
-           <li>
-             USD
-           </li>
-        </ul>
-        <div class="icon">
-          <i class="icon-flag"> </i>
+        <div class="navbar-info-right-link">
+              <a href="#">LOGIN / </a>
+              <a href="#">REGISTER</a>
+        </div>
+        <div class="navbar-info-right-list">
+            <div class="navbar-info-right-langlist">
+                <select class="langlist">
+                  <option>USD</option>
+                </select>
+            </div>
+        </div>
+        <div class="icon-flag">
+          <img class="flag" src="image/flag.png"/>
         </div>
       </div>
     </div>
@@ -31,10 +39,10 @@
         <div class="icon">
           <i class="icon-search"></i>
         </div>
-        <input type="text">
+        <input type="text" value="SEARCH">
       </div>
       <div class="info-logo">
-        <img src="#" alt="">
+        <img src="#" alt="logo">
       </div>
       <div class="info-profile">
         <div class="info-profile-wishlist">
@@ -45,8 +53,10 @@
            <div class="icon">
               <i class="icon-heart"></i>
            </div>
+           <div>
               <div class="info-wishlist-link">
-              <a href="#">WISHLIST</a>
+                <a href="#">WISHLIST</a>
+              </div>
            </div>
         </div>
         <div class="info-profile-checkout">
