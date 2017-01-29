@@ -4,18 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="site.css">
+  <link rel="stylesheet" href="D:/EpamTraining/FE_traning/image/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
   <title>Task 1</title>
 </head>
 <body>
   <div class="navbar-info">
     <div class="navbar-info-top">
       <div class="navbar-info-left">
-          <div class="icon-car">
-            <img class="car" src="image/car.png"></img>
-          </div>
-          <div class="navbar-info-left-text">
+        <p class="navbar-info-left-text">
+          <img class="car" src="image/car.png"></img>
             GET FREE! SHIPPING ON ORDER OVER <span class="navbar-info-left-cost">$100</span>
-          </div>
+        </p>
       </div>
       <div class=navbar-info-right>
         <div class="navbar-info-right-link">
@@ -26,6 +25,7 @@
             <div class="navbar-info-right-langlist">
                 <select class="langlist">
                   <option>USD</option>
+                  <option>RUS</option>
                 </select>
             </div>
         </div>
@@ -36,253 +36,278 @@
     </div>
     <div class="info">
       <div class="info-search">
-        <div class="icon">
-          <i class="icon-search"></i>
+        <div class="icons">
+          <a class="fa fa-search" href="#"></a>
         </div>
-        <input type="text" value="SEARCH">
+        <div class="info-search-input">
+          <input type="text" value="SEARCH">
+        </div>
       </div>
       <div class="info-logo">
-        <img src="#" alt="logo">
+        <a href="#" class="info-logo-link">
+          <img src="image/logo.png" alt="logo">
+        </a>
       </div>
       <div class="info-profile">
-        <div class="info-profile-wishlist">
-           <div class="icon">
-              <i class="icon-square"></i>
-              <span class="icon-number">3</span>
+         <div class="info-profile-wishlist">
+           <div class="order-link">
+             <div class="count-order-link">
+                   <span class="count-order">3</span>
+             </div>
+          </div>
+           <div class="info-wishlist">
+               <a href="#">
+                 <div class="iconho">
+                    <i class="fa fa-heart-o"></i>
+                 </div>
+                 <div class="info-wishlist-link">
+                    WISHLIST
+                 </div>
+               </a>
            </div>
-           <div class="icon">
-              <i class="icon-heart"></i>
-           </div>
-           <div>
-              <div class="info-wishlist-link">
-                <a href="#">WISHLIST</a>
-              </div>
-           </div>
-        </div>
+         </div>
         <div class="info-profile-checkout">
-          <div class="icon">
-            <i class="icon-shopping-carts"></i>
-          </div>
-          <div class="info-profile-checkout-link">
-            <a href="#">CHECKOUT</a>
-          </div>
+          <a href="#">
+            <div class="info-profile-checkout-link">
+                CHECKOUT
+            </div>
+            <div class="iconc">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
-
   <div class="navbar-menu">
-      <div class="navbar-menu-list">
-        <a href="#">CATEGORY</a>
-        <ul class="navbar-menu-list-items">
-          <li>
-            <a href="#">T-SHIRTS & VEST</a>
-            <ul class ="navbar-menu-list-initems">
+      <div class="dropdown-catlist">
+          <nav class="primary_nav_wrap">
+            <ul>
               <li>
-                <a href="#">dsf</a>
-              </li>
-          </li>
-          <li>
-            <a href="#">JUMBERS & CARDIGANS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">hyef</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">HOODIES & SWEATS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">bnnsrt</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">SPORTS  WEAR</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">zsdt</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">COASTS & JACKETS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">litwf</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">SHIRTS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">CHECK SHIRTS</a>
-              </li>
-              <li>
-                <a href="#">DENIM SHIRTS</a>
-              </li>
-              <li>
-                <a href="#">LONG SLEEVE SHIRTS</a>
-              </li>
-              <li>
-                <a href="#">PLAIN SHIRTS</a>
-              </li>
-              <li>
-                <a href="#">PRINTED SHIRTS</a>
-              </li>
-              <li>
-                <a href="#">SHORT SLEEVE SHIRTS</a>
-              </li>
-              <li>
-                <a href="#">SHORTSLEEVE DENIM SHIRTS</a>
+                <a class="main-link" href="#">
+                  <div class="link-text">CATEGORY</div>
+                  <i class="fa fa-bars"></i>
+               </a>
+                <ul>
+                  <li><a href="#">T-SHIRTS & VESTS</a></li>
+                  <li><a href="#">JUMBERS & CARDIGANS</a></li>
+                  <li><a href="#">HOODIES & SWEATS</a></li>
+                  <li><a href="#">SPORTS WEAR</a></li>
+                  <li><a href="#">SHIRTS</a>
+                    <ul>
+                      <li>
+                        <a href="#">CHECK SHIRTS</a>
+                      </li>
+                      <li>
+                        <a href="#">DENIM SHIRTS</a>
+                      </li>
+                      <li>
+                        <a href="#">LONG SLEEVE SHIRTS</a>
+                      </li>
+                      <li>
+                        <a href="#">PLAIN SHIRTS</a>
+                      </li>
+                      <li>
+                        <a href="#">PRINTED SHIRTS</a>
+                      </li>
+                      <li>
+                        <a href="#">SHORT SLEEVE SHIRTS</a>
+                      </li>
+                      <li>
+                        <a href="#">SHORTSLEEVE DENIM SHIRTS</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">SHORTS</a></li>
+                  <li><a href="#">SWIMWAER</a></li>
+                  <li><a href="#">TROUSERS</a></li>
+                  <li><a href="#">JEANS</a></li>
+                  <li><a href="#">ONESIES & LOUNGWEAR</a></li>
+                </ul>
               </li>
             </ul>
-          </li>
+          </nav>
+      </div>
+      <div class="navbar-menu-item">
+        <ul class="item">
           <li>
-            <a href="#">SHORTS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">DFGD</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">SWIMAWAER</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">GFHF</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">TROUSERS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">GDFG</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">JEANS</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>asd</li>
-              <li>dsf</li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">ONESIES & LOUNGEWAR</a>
-            <ul class ="navbar-menu-list-initems">
-              <li>
-                <a href="#">HTWBBD</a>
-              </li>
-            </ul>
+                <a href="#">HOME</a>
+                <ul>
+                </ul>
           </li>
         </ul>
       </div>
       <div class="navbar-menu-item">
-        <a href="#">HOME</a>
+        <ul class="item">
+          <li>
+                <a href="#">SHOP</a>
+                <ul>
+                </ul>
+          </li>
+        </ul>
       </div>
       <div class="navbar-menu-item">
-       <a href="#">SHOP</a>
+        <ul class="item">
+          <li>
+                <a href="#">ACCESSORIES</a>
+                <ul>
+                </ul>
+          </li>
+        </ul>
       </div>
       <div class="navbar-menu-item">
-       <a href="#">ACCESSORIES</a>
+        <ul class="item">
+          <li>
+                <a href="#">BRANDS</a>
+                <ul>
+                </ul>
+          </li>
+        </ul>
       </div>
       <div class="navbar-menu-item">
-       <a href="#">BRANDS</a>
+        <ul class="item">
+          <li>
+                <a href="#">PAGES</a>
+                <ul>
+                </ul>
+          </li>
+        </ul>
       </div>
       <div class="navbar-menu-item">
-       <a href="#">PAGES</a>
+        <ul class="item">
+          <li>
+                <a href="#">BLOG</a>
+                <ul>
+                </ul>
+          </li>
+        </ul>
       </div>
-      <div class="navbar-menu-item">
-       <a href="#">BLOG</a>
-      </div>
-       <div class="navbar-menu-catalog">
-       <i class="icon-box"></i>
-       <a href="#">CART :</a>
-        <span class="cart-items-count">2</span> ITEMS
-         <ul class="navbar-menu-cart-orders">
-           <li>
-             <div class="navbar-menu-cart-order-items">
-               <i class="icon-item"></i>
-               <div class="navbar-menu-cart-order-items-info">
-                 MEN'S FASHION BLUE JEAN COAT
-               </div>
-               <span class="navbar-menu-cart-order-items-count">2</span>
-               $<span class="navbar-menu-cart-order-items-cost">130</span>
-             </div>
-           </li>
-           <li>
-             <div class="navbar-menu-cart-order-items">
-               <i class="icon-item"></i>
-               <div class="navbar-menu-cart-order-items-info">
-                 JEAN FASHION COOL COAT
-               </div>
-               <span class="navbar-menu-cart-order-items-count">1</span>
-               $<span class="navbar-menu-cart-order-items-cost">90</span>
-             </div>
-           </li>
-         </ul>
-         <div class="navbar-menu-cart-order-total-info">
-           <div class="navbar-menu-cart-order-total-info-left">
-             FREE SHIPPING
-           </div>
-           <div class="navbar-menu-cart-order-total-right">
-             TOTAL $<span class="navbar-menu-cart-order-total-cost">350</span>
-           </div>
-         </div>
-         <button class="navbar-menu-cart-order-total-button">
-           VIEW CART
-         </button>
-         <button class=""navbar-menu-cart-order-total-button"">
-           CHEACK OUT
-         </button>
+       <div class="navbar-menu-cartlist">
+          <div class="cart-order">
+            <div class="cart-menu">
+              <div class="clearfix">
+                <a href="#" class="cart-items-link">
+                  <i class="fa fa-shopping-bag"></i>
+                  CART :
+                  <span class="count-cart-item">2</span>
+                  ITEMS
+                </a>
+              </div>
+            </div>
+            <div class="order-bag">
+              <div class="cart-item">
+                <div class="cart-item-img">
+                  <img src="image/man1_cartlist.jpg" alt="#">
+                </div>
+                <div class="cart-item-info">
+                  <div class="cart-item-info-text">
+                    MEN'S FASHION BLUE JEAN COAT
+                    <span>2 x $ 130.00</span>
+                  </div>
+                  <div class="cart-item-info-close">
+                    <a href="#">
+                      <i class="fa fa-close"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="cart-item-img">
+                  <img src="image/man2_cartlist.jpg" alt="#">
+                </div>
+                <div class="cart-item-info">
+                  <div class="cart-item-info-text">
+                      JEAN FASHION COOL COAT
+                      <span>1 x $90.00</span>
+                  </div>
+                  <div class="cart-item-info-close">
+                    <a href="#">
+                      <i class="fa fa-close"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-text">
+                <div class="footer-text-static">
+                  FREE SHIPPING
+                </div>
+                <div class="footer-text-all-cost">
+                   TOTAL $<span>350</span>
+                </div>
+              </div>
+              <div class="footer-order">
+                <a href="#">
+                <div class="footer-order-left">
+                  VIEW CART
+                </div>
+                </a>
+                <a href="#">
+                <div class="footer-order-right">
+                  CHECK OUT
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
        </div>
+  </div>
+  <div class="discount-background">
+    <div class="dicount-linex"></div>
+    <div class="discount-circle-inside">
+      <div class="discount-circle-into">
+        <div class="point"></div>
+        <p>GET</p>
+        <span>20%</span>
+       </div>
+    </div>
+  </div>
+  <div class="shop-info-box">
+    <div class="shop-info">
+      <div class="shop-info-item">
+        <div class="shop-info-left">
+          <div class="shop-info-item-circle">
+            <i class="fa fa-phone"></i>
+          </div>
+        </div>
+        <div class="shop-info-right">
+          <p class="p1">01(800) 433 633</p>
+          <p class="p2">DAILY 10-00 TO 22-00</p>
+        </div>
+      </div>
+      <div class="shop-info-item">
+        <div class="shop-info-left">
+          <div class="shop-info-item-circle">
+            <i class="fa fa-globe"></i>
+          </div>
+        </div>
+        <div class="shop-info-right">
+          <p class="p1">FAST DELIVERY ACROSS</p>
+          <p class="p2">AUSTRALIA</p>
+        </div>
+      </div>
+      <div class="shop-info-item">
+        <div class="shop-info-left">
+          <div class="shop-info-item-circle">
+            <i class="fa fa-gift"></i>
+          </div>
+        </div>
+        <div class="shop-info-right">
+          <p class="p1">30% DISCOUNT ON ORDER</p>
+          <p class="p2">OVER $199</p>
+        </div>
+      </div>
+      <div class="shop-info-item">
+        <div class="shop-info-left">
+          <div class="shop-info-item-circle">
+            <i class="fa fa-circle-o"></i>
+          </div>
+        </div>
+        <div class="shop-info-right">
+          <p class="p-center">14-DAY RETURN POLICY</p>
+        </div>
       </div>
     </div>
-
-    <div class="under-mavigate-image">
-      <img src="#" alt="GET 20%">
-    </div>
-
-    <div class="additional-information">
-        <div class="additional-information-block">
-         <i class="icon-phone"></i>
-          <div class="additional-information-text">
-            01 (800) 433 633
-          </div>
-          <div class="additional-information-text">
-            DAILY 10.00 TO 22.00
-          </div>
-        </div>
-       <div class="additional-information-block">
-        <i class="icon-word"></i>
-         <div class="additional-information-text">
-            FAST DELIVERY ACROSS
-          </div>
-          <div class="additional-information-text">
-            AUSTRALIA
-          </div>
-        </div>
-       <div class="additional-information-block">
-        <i class="icon-cost"></i>
-         <div class="additional-information-text">
-            <span class="additional-information-discount">30</span>% DISCOUNT ON ORDER
-          </div>
-          <div class="additional-information-text">
-            OVER $<span class="additional-information-cost">199</span>
-          </div>
-        </div>
-       <div class="additional-information-block">
-        <i class="icon-arrow-around"></i>
-         <div class="additional-information-text">
-            14-DAY RETURN POLICY
-          </div>
-        </div>
-    </div>
-
+  </div>
     <div class="trending-slight">
       <div class="trending-slight-text">
           TRENDING CLOTHING
