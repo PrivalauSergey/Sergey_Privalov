@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Magnifier.iml" filepath="$PROJECT_DIR$/.idea/Magnifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Magnifier/.idea/Magnifier.iml" filepath="$PROJECT_DIR$/../Magnifier/.idea/Magnifier.iml" />
     </modules>
   </component>
 </project>

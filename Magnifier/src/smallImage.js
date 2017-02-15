@@ -11,16 +11,19 @@ class smallImage extends Component {
         var y = e.clientY;
         var div = document.getElementById('choose-area');
         var zoom = document.getElementById('zoom-img');
-        if ((x >= 95 && x <= 405)) {
-            div.style.left = (x - 95) + 'px';
-            zoom.style.marginLeft = -(x * 4) + 'px';
-        }
-        ;
-        if (y >= 90 && y <= 405) {
-            div.style.top = (y - 95) + 'px';
-            zoom.style.marginTop =  -(y * 4) + 'px';
+        if (x >= 55 && x <= 440) {
+            div.style.left = (x - 55) + 'px';
         };
-    };
+        if (y >= 55 && y <= 440) {
+            div.style.top = (y - 55) + 'px';
+        };
+            if (x >= 0 && x <= 44) {
+            zoom.style.left = -(x * 3) + 'px';
+        };
+        if (y >= 0 && y <= 464) {
+            zoom.style.bottom =  (y * 3) + 'px';
+        };
+    }
 
     mouseOut() {
         document.getElementById("choose-area").style.top = '150px';

@@ -5,15 +5,13 @@
 #choose-area {
     z-index: 1;
     position: absolute;
-    width: 150px;
-    height: 150px;
-    background-color: rgb(230,230,230);
+    width: 75px;
+    height: 75px;
+    background-color: rgba(146,146,146,0.16);
 }
 .small-image {
     position: absolute;
     z-index: 10;
-    width: 460px;
-    height: 460px;
     margin: 20px;
 }
 .small-image:hover #choose-area {
@@ -24,14 +22,15 @@
 }
 #zoom-wrapper {
     position: absolute;
-    width: 464px;
-    height: 464px;
-    left: 50%;
-    border: 2px solid black;
     overflow: hidden;
     display: none;
+    left: 30%;
+    border: 2px solid black;
+    width: 464px;
+    height: 464px;
+    position: relative;
+    padding: 0 200px 0 200px;
 }
 #zoom-img {
-    margin-top: -900px;
-    margin-left: -500px;
+    position: relative;
 }
